@@ -18,6 +18,9 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
+LOCAL_CFLAGS := \
+        -Os
+
 LOCAL_MODULE := com.android.phone.shared
 
 include $(BUILD_STATIC_JAVA_LIBRARY)
